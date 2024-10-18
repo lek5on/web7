@@ -1,0 +1,100 @@
+header{
+    background: rgb(255, 255, 255);
+
+height: 140px;
+box-shadow: 0px 7px 15px rgb(169, 169, 169);}
+body{
+    background-color: #eaeaea;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+}
+.text{
+    
+    color:black;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+    font-size: 40px;
+}
+img {
+    width: 300px;
+    max-height: 300px;
+  }
+
+
+.gallery__slider {
+    display: flex;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+  max-width: 100%;
+  }
+  
+  .gallery__slide {
+    min-width: calc(33.33% - 20px);
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+  .gallery__slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+ 
+  
+  .gallery__nav {
+    transform: translateY(-50%);
+  }
+  .gallery_nav {
+    margin-top: 20px;
+  }
+  
+  .gallery__nav button {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+
+  .gallery__pager {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gallery__pager-current,
+  .gallery__pager-total {
+    font-size: 18px;
+    margin: 0 5px;
+  }
+  
+  .gallery {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  footer{
+    background: rgb(255, 255, 255);
+    height: 100px;
+    box-shadow: 0px -0px 15px rgb(169, 169, 169);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .photo_space {
+    display: none;
+  }
+  .photo_space.active {
+    display: block;
+  }
+  .gallery__slide {
+    min-width: calc(33.33% - 20px);
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    .gallery__slide {
+      min-width: calc(100% - 20px); 
+    }
+    
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
